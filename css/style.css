@@ -1,0 +1,170 @@
+/* Mise en page arrière plan Portfolio */
+body
+{
+    background-image: url(../img/icons/bg.jpg);
+}
+
+/* Mise en page header et Footer PortFolio */
+header, footer{
+    background: rgb(8, 8, 8);
+    
+} 
+
+#logo:hover
+{
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px rgba(219, 212, 212, 0.3);
+}
+.navbar-toggler
+{
+    background: #0275d8;
+}
+
+ ul 
+{
+    display: flex;
+    list-style: none;
+   
+}
+
+li
+{
+    margin: 0 25px;
+}
+
+/* Mise en page des Titres du PortFolio */
+h1
+{
+    font-size: 75px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(240, 235, 235)
+}
+
+h2
+{
+    font-size: 20px;   
+}
+
+h3{
+    font-family: 'Roboto Slab', serif;
+    color: #d9534f;
+    text-align: center;
+    font-weight: bold;
+}
+
+h4, h5{
+    color: silver;
+    font-style:italic;
+}
+
+/* Mise en forme bouton CV */
+.btn-primary
+{
+    text-transform: uppercase;
+    padding:10px 30px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;    
+}
+
+/*Mise en forme description page index */
+.identity
+{
+    box-shadow: 6px 4px 7px 1px rgb(78, 77, 77);
+    color:rgb(240, 235, 235);
+    
+}
+
+.portfolio
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style:italic;
+    color:rgb(240, 235, 235);
+   
+}
+
+/* Animation images page index */
+.imgPortfolio:hover
+{
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 1px 1px 20px rgba(219, 212, 212, 0.5);
+}
+
+.projects img
+{
+    width: 100%;
+}
+
+/* Mise en forme du contenu des différents projets */
+section > .figOne
+{
+     margin-left: 40px; 
+    font-size:15px;
+    font-weight: bold;
+    color:rgb(31, 30, 30);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 6px 12px;
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 6px 4px 7px 1px rgb(78, 77, 77);
+    color:rgb(240, 235, 235);
+}
+
+.img_zoom img
+{
+    width: 550px;
+    border-radius: 5px;
+    border: none;
+    overflow: hidden;
+}
+
+figcaption
+{
+    padding: 20px 60px;
+}
+
+.projet{
+    color: #d9534f;
+}
+
+/*Apparition progressive de l'image*/
+@keyframes fade-in 
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    100% 
+    {
+        opacity: 1;
+    }
+}
+
+.img_zoom
+{
+    opacity: 0;
+    animation: fade-in 6s forwards;
+    animation-delay: 2ms;
+}
+
+/* Mise en forme version Responsive */
+@media screen and (max-width:800px){
+    section > .figOne
+    {
+        margin: auto;
+    }
+    h1{
+        font-size:30px;
+    }
+    .img_zoom img
+    {
+        width: 100%;
+    }
+}
+ 
